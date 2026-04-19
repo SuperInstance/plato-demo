@@ -1,0 +1,13 @@
+[package]
+name = "plato-demo"
+version = "0.1.0"
+edition = "2021"
+description = "The PLATO HN Demo — 59 seeds → 2,501 tiles → 4 ensigns in 55s on CPU"
+
+[dependencies]
+plato-dcs = { git = "https://github.com/SuperInstance/plato-dcs.git" }
+plato-forge-pipeline = { git = "https://github.com/SuperInstance/plato-forge-pipeline.git" }
+plato-unified-belief = { git = "https://github.com/SuperInstance/plato-unified-belief.git" }
+plato-deploy-policy = { git = "https://github.com/SuperInstance/plato-deploy-policy.git" }
+plato-relay-tidepool = { git = "https://github.com/SuperInstance/plato-relay-tidepool.git" }
+plato-afterlife = { git = "https://github.com/SuperInstance/plato-afterlife.git" }
