@@ -1,0 +1,19 @@
+╔══════════════════════════════════════════════════════════════╗
+║  PLATO v0.2.0 — 5-Atom Fleet Coordination Demo              ║
+╚══════════════════════════════════════════════════════════════╝
+
+$ python3 -c "import plato; print(plato.__version__)"
+0.2.0
+
+$ wrapped = plato.wrap(agent, host="http://localhost:8847")
+$ wrapped.reason("How should a fleet coordinate?")
+
+ATOM 1: PERCEIVE — Fleet = 4 agents, keeper-mediated
+ATOM 2: ANALYZE  — Priority tiers, deadband protocol  
+ATOM 3: REASON   — Bottle routing with keeper as hub
+ATOM 4: REFINE   — Edge case: agent offline → pool queue
+ATOM 5: SUBMIT   — Keeper routes P0 immediately, P2 batch
+
+Result: Keeper-mediated bottle routing with deadband protocol.
+Each agent registers capabilities, sends targeted bottles by role.
+P0 bypasses deadband for immediate delivery. P2 batches.
